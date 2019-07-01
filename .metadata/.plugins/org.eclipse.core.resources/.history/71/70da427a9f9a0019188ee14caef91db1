@@ -1,0 +1,9 @@
+spring.data.mongodb.database=studentdata
+spring.data.mongodb.host=localhost
+spring.data.mongodb.port=27017
+MongoClientURI uri = new MongoClientURI(
+    "mongodb+srv://davidbrown:<password>@studentdatabase-i1zyy.mongodb.net/test?retryWrites=true&w=majority");
+
+MongoClient mongoClient = new MongoClient(uri);
+MongoDatabase database = mongoClient.getDatabase("test");
+spring.data.mongodb.uri=mongodb://davidbrown:betheltech@studentdatabase-i1zyy.mongodb.net/test?retryWrites=true&w=majority

@@ -1,0 +1,3 @@
+spring.data.mongodb.database=students
+spring.data.mongodb.host=mongoserver
+spring.data.mongodb.uri=mongodb://davidbrown:betheltech@studentdatabase-i1zyy.mongodb.net/test?retryWrites=true&w=majority

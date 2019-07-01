@@ -1,0 +1,22 @@
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.mongodb.MongoClient;
+import com.mongodb.MongoClientURI;
+import com.mongodb.client.MongoDatabase;
+
+@SpringBootApplication
+public class DemoforBstApplication {
+
+	public static void main(String[] args) {
+		MongoClientURI uri = new MongoClientURI(
+			    "mongodb+srv://davidbrown:<password>@studentdatabase-i1zyy.mongodb.net/test?retryWrites=true&w=majority");
+
+			MongoClient mongoClient = new MongoClient(uri);
+			MongoDatabase database = mongoClient.getDatabase("test");
+		SpringApplication.run(DemoforBstApplication.class, args);
+	}
+
+}
